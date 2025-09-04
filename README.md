@@ -80,17 +80,11 @@
 
 ### Registradores de ponto flutuante
 
-| Nome    | Descrição | Observações |
-
-|---------|-----------|-------------|
-
-| fa0–fa7 | Argumentos/retorno de funções float/double | Usados para passagem de argumentos e retornos de ponto flutuante |
-
-| ft0–ft11| Temporários float | Não preservados entre chamadas de função |
-
-| fs0–fs11| Saved registers float | Preservados; valores devem ser salvos/restaurados por funções que os utilizam |
-
-
+| Nome     | Descrição                       | Observações                                 |
+| -------- | ------------------------------- | ------------------------------------------- |
+| fa0–fa7  | Argumentos/retorno float/double | Passagem de parâmetros e valores de retorno |
+| ft0–ft11 | Temporários float               | Não preservados entre chamadas              |
+| fs0–fs11 | Saved registers float           | Preservados; devem ser salvos/restaurados   |
 
 ---
 
