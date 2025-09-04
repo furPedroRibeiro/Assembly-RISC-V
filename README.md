@@ -48,7 +48,7 @@
 
 
 
-### Registradores de ponto flutuante
+## 3. Registradores de ponto flutuante
 
 | Nome     | Descrição                       | Observações                                 |
 | -------- | ------------------------------- | ------------------------------------------- |
