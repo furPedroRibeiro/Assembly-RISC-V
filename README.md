@@ -1,8 +1,8 @@
-\# RISC-V Reference - Syscalls e Registradores
+# RISC-V Reference - Syscalls e Registradores
 
 
 
-\## 1. Syscalls RARS (RISC-V)
+## 1. Syscalls RARS (RISC-V)
 
 | a7 | Syscall           | Entrada (registradores) | Saída |
 
@@ -46,7 +46,7 @@
 
 
 
-\## 2. Registradores Inteiros RISC-V (32I ABI)
+## 2. Registradores Inteiros RISC-V (32I ABI)
 
 | Nome | Número | Descrição | Observações |
 
@@ -78,7 +78,7 @@
 
 
 
-\### Registradores de ponto flutuante
+### Registradores de ponto flutuante
 
 | Nome    | Descrição | Observações |
 
@@ -96,17 +96,17 @@
 
 
 
-\*\*Resumo:\*\*
+**Resumo:**
 
-\- \*\*Preservados (saved registers)\*\*: mantêm seus valores após chamadas de função; usados para variáveis que precisam persistir.
+- **Preservados (saved registers)**: mantêm seus valores após chamadas de função; usados para variáveis que precisam persistir.
 
-\- \*\*Temporários (t0–t6, ft0–ft11)\*\*: podem ser sobrescritos por funções; não precisam ser salvos.
+- **Temporários (t0–t6, ft0–ft11)**: podem ser sobrescritos por funções; não precisam ser salvos.
 
-\- \*\*Argumentos/retorno (a0–a7, fa0–fa7)\*\*: usados para passar dados entre funções ou receber resultados.
+- **Argumentos/retorno (a0–a7, fa0–fa7)**: usados para passar dados entre funções ou receber resultados.
 
-\- \*\*zero\*\* = 0 constante, \*\*sp\*\* = ponteiro da pilha, \*\*ra\*\* = endereço de retorno.
+- **zero** = 0 constante, **sp** = ponteiro da pilha, **ra** = endereço de retorno.
 
-\- \*\*Syscalls\*\*: controladas pelo registrador `a7`, com argumentos em `a0, a1...`.
+- **Syscalls**: controladas pelo registrador `a7`, com argumentos em `a0, a1...`.
 
 
 
