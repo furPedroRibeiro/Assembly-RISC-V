@@ -17,16 +17,16 @@ main:
 		#agora vamos ler um número inteiro
 		addi a7, zero, 5
 		ecall
-		#depois de ler o número inteiro, guardamos ele em s0
+		#depois de ler o número inteiro, guardamos ele em s0, então s0 = x
 		add s0, zero, a0
-		#vamos falar que o fatorial é igual a 1 setando s1 = 1
+		#vamos falar que o fatorial é igual a 1 setando s1 = 1, então s1 será nosso resultado do fatorial
 		addi s1, zero, 1
-		#criando contador de n até 1
+		#criando contador de x(número de entrada), entõ t0 = s0 = x
 		add t0, s0, zero
 		#registrador auxiliar da condição de parada
 		addi t1, zero, 1
 		#loop abaixo
-loop:		ble t0, t1, sai_loop
+loop:		ble t0, t1, sai_loop	#ble = branch if less or equal, se t0<t1 vai pro rótulo "sai_loop"
 		#pegamos o valor já setado do fatorial(1) e multiplicamos por n, e a cada loop, n é decrescido em 1.
 		mul s1, s1, t0
 		addi t0, t0, -1
