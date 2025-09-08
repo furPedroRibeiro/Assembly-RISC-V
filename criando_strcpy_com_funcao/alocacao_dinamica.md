@@ -11,7 +11,7 @@
 
 ---
 
-| DADOS      || Estático         || Código     |
-| ---------- || ---------------- || ---------- |
-| stack      || str_dst: 1 word  |
-| heap       || str_src          |
+| DADOS      | Estático         | Código     |
+| ---------- | ---------------- | ---------- |
+| stack      | str_dst: 1 word  |
+| heap       | str_src          |
