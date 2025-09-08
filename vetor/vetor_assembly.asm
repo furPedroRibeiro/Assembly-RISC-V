@@ -2,7 +2,10 @@
 vetor:  	.word 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 
 		.text
-		la t1, vetor		#carrega o primeiro indice(endereço) do vetor pra t1
+		.align 2
+		.global main
+		
+main:		la t1, vetor		#carrega o primeiro indice(endereço) do vetor pra t1
 		addi t2, zero, 10 	#essa vai ser a condição de parada do loop
 		addi t3, zero, 0	#esse vai ser o contador do loop
 loop:		beq t2, t3, sai_loop	#se t2 = t3 sai do loop
