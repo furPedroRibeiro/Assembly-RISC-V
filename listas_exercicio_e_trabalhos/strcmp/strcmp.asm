@@ -1,6 +1,6 @@
 		.data
 		.align 0
-str1:		.asciz "Oi geladinhoooooooooooooo"
+str1:		.asciz "Texto 1"
 str2:		.asciz "Texto 1, será que é igua"
 str_saida_1:	.asciz "As string são: iguais"
 str_saida_2: 	.asciz "As string são: diferentes"
